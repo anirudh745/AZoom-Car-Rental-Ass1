@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Return Vehicle | AZoom Car Rental</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=DM+Sans:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    .uploader {border:1px dashed var(--line); border-radius:12px; padding:12px; background:#fcfdfc;}
+    .previews {display:flex; flex-wrap:wrap; gap:10px; margin-top:10px;}
+    .previews img {width:120px; height:90px; object-fit:cover; border-radius:8px; border:1px solid var(--line); box-shadow:var(--shadow-sm);}
+    .hint {color:var(--muted); font-size:.9rem; margin-top:6px;}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">AZoom<span>EV</span></a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="cars.html">Cars</a>
+        <a href="booking.html">Booking</a>
+        <a href="about.html">About</a>
+        <a href="login.html" class="btn btn--ghost">Login</a>
+        <a href="return.html" >Return</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <h1>Return Vehicle</h1>
+      <p class="muted">Choose your return location and upload photos of the vehicle’s exterior and interior. This helps us speed up inspection.</p>
+      <div id="returnList" class="cards-grid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2025 AZoom Car Rental — Electric only. Greener rides.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
