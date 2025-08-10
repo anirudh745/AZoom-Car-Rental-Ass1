@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Cars | AZoom Car Rental</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="logo">AZoom<span>EV</span></a>
+        <nav class="nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="cars.html">Cars</a>
+          <a href="booking.html">Booking</a>
+          <a href="about.html">About</a>
+          <a href="login.html" class="btn btn--ghost">Login</a>
+          <a href="return.html" >Return</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section>
+        <h1>Our Electric Fleet</h1>
+
+        <div class="cards-grid">
+          <article class="car-card">
+            <img
+              src="https://media.ed.edmunds-media.com/tesla/model-3/2025/oem/2025_tesla_model-3_sedan_long-range_fq_oem_1_815.jpg"
+              alt="Tesla Model 3"
+            />
+            <h3>Tesla Model 3</h3>
+            <p>From <strong>$120/day</strong>, $680/week, $2400/month</p>
+            <button
+              class="btn add-to-booking"
+              data-car="Tesla Model 3"
+              data-rate="120"
+            >
+              Select
+            </button>
+          </article>
+          <article class="car-card">
+            <img
+              src="https://images.prismic.io/carwow/a9b25a99-74ae-4ce8-bf98-d20fd9b2b927_Front+%C2%BE+moving.jpg?auto=format&cs=tinysrgb&fit=max&q=60"
+              alt="Nissan Leaf"
+            />
+            <h3>Nissan Leaf</h3>
+            <p>From <strong>$80/day</strong>, $450/week, $1500/month</p>
+            <button
+              class="btn add-to-booking"
+              data-car="Nissan Leaf"
+              data-rate="80"
+            >
+              Select
+            </button>
+          </article>
+          <article class="car-card">
+            <img
+              src="https://www.thecarexpert.co.uk/wp-content/uploads/2021/09/hyundai-ioniq-5-n-line-03686-1920x960.jpg"
+              alt="Hyundai Ioniq 5"
+            />
+            <h3>Hyundai Ioniq 5</h3>
+            <p>From <strong>$110/day</strong>, $640/week, $2200/month</p>
+            <button
+              class="btn add-to-booking"
+              data-car="Hyundai Ioniq 5"
+              data-rate="110"
+            >
+              Select
+            </button>
+          </article>
+        </div>
+        <p class="muted">
+          * Rates are indicative; final price shown at booking.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© 2025 AZoom Car Rental — Electric only. Greener rides.</p>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
